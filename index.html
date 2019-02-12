@@ -1,0 +1,36 @@
+<html lang="en" 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .barChart{
+            width: 100%;
+            height: 300px;
+        }
+        
+        .graphLi li{
+            width: 30%;
+            float: left;
+            list-style-type: none;
+        }
+
+        .graphLi li svg{
+            overflow: visible;
+        }
+    </style>
+</head>
+<body data-ng-app="uiRouterApp">
+    <data-ui-view></data-ui-view>
+    <script src="js/d3.v4.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="app-config.js"></script>
+    <!--    <script src="controllers/login-controller.js"></script> -->
+    <script src="controllers/dashboard-controller.js"></script>
+    <script src="directives/chart-directive.js"></script>
+    <script src="directives/line-directive.js"></script>
+</body>
+</html>

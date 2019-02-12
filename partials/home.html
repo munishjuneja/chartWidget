@@ -1,0 +1,38 @@
+
+<div>Welcome to dashboard
+
+        {{dashboard.hello}}∞
+        <button data-ng-click="dashboard.changeData()">Change Data</button>  
+        <button data-ng-click="dashboard.cancelInterval()">Cancel Interval</button>
+        <button data-ng-click="dashboard.startInterval()">Start Interval</button>
+    <ul class="graphLi">
+        <li data-ng-repeat="o in dashboard.obj">
+            <div class="barChart" bar-chart graph-data="o" color="dashboard.color"></div>
+        </li>
+        <li>
+            <div class="barChart" line-chart graph-data="dashboard.lineData" color="dashboard.color"></div>
+        </li>
+        <li>
+            <div class="barChart" line-chart graph-data="dashboard.lineData2" color="dashboard.color2"></div>
+        </li>
+        <li>
+            <div class="barChart" line-chart graph-data="dashboard.lineData3" color="dashboard.color3"></div>
+        </li>
+        <li>
+            <div class="barChart" line-chart graph-data="dashboard.lineData" color="dashboard.color4"></div>
+        </li>
+
+    </ul>
+
+    <!-- 
+    <ul class="graphLi">
+            <li data-ng-repeat="o in dashboard.obj">
+                <div class="barChart" line-chart graph-data="o" color="dashboard.color"></div>
+            </li>
+    
+        </ul> -->
+    <!-- <button data-ng-click="dashboard.removeAllData()">Remove All Data</button>
+    <button data-ng-click="dashboard.changeData()">Change Data</button> -->
+    <!-- <div class="barChart" bar-chart graph-data="dashboard.barGraph" color="dashboard.color"></div>
+    <div class="barChart" bar-chart graph-data="dashboard.barGraph2" color="dashboard.color"></div> -->
+</div>l
